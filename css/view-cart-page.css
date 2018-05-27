@@ -1,0 +1,243 @@
+	  /* Global settings */
+/* Global "table" column settings */
+.product-image2 {
+  float: left;
+  width: 20%;
+}
+
+.product-details2 {
+  float: left;
+  width: 37%;
+}
+
+.product-price2 {
+  float: left;
+  width: 12%;
+}
+
+.product-quantity2 {
+  float: left;
+  width: 10%;
+}
+
+.product-removal2 {
+  float: left;
+  width: 9%;
+}
+
+.product-line-price2 {
+  float: left;
+  width: 12%;
+  text-align: center;
+}
+
+/* This is used as the traditional .clearfix class */
+.group2:before, .shopping-cart2:before, .column-labels2:before, .product2:before, .totals-item2:before,
+.group2:after,
+.shopping-cart2:after,
+.column-labels2:after,
+.product2:after,
+.totals-item2:after {
+  content: '';
+  display: table;
+}
+
+.group2:after, .shopping-cart2:after, .column-labels2:after, .product2:after, .totals-item2:after {
+  clear: both;
+}
+
+.group2, .shopping-cart2, .column-labels2, .product2, .totals-item2 {
+  zoom: 1;
+}
+
+/* Apply clearfix in a few places */
+/* Apply dollar signs */
+.product2 .product-price2:before, .product2 .product-line-price2:before, .totals-value2:before {
+  content: '$';
+}
+
+
+
+label2 {
+  color: #aaa;
+}
+
+
+
+/* Column headers */
+.column-labels2 label2 {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+/*.column-labels2 .product-image2, .column-labels2 .product-details2, .column-labels2 .product-removal2 {
+  text-indent: -9999px;
+}*/
+
+/* Product entries */
+.product2 {
+ 
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.product2 .product-image2 {
+  text-align: center;
+}
+.product2 .product-image2 img {
+  width: 100px;
+}
+.product2 .product-details2 .product-title2 {
+  margin-right: 20px;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+}
+.product2 .product-details2 .product-description2 {
+  margin: 5px 20px 5px 0;
+  line-height: 1.4em;
+}
+.product2 .product-quantity2 input {
+  width: 40px;
+}
+.product2 .remove-product2 {
+  border: 0;
+  padding: 4px 8px;
+  background: none;
+  color: #000;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+  font-size: 18px;
+  border-radius: 3px;
+}
+.product2 .remove-product2:hover {
+  background:none;
+  color:red;
+}
+
+/* Totals section */
+.totals2 .totals-item2 {
+  float: right;
+  clear: both;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.totals2 .totals-item2 label {
+  float: left;
+  clear: both;
+  width: 79%;
+  text-align: right;
+}
+.totals2 .totals-item2 .totals-value2 {
+  float: right;
+  width: 21%;
+  text-align: right;
+}
+.totals2 .totals-item-total2 {
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+}
+
+.checkout2 {
+  float: right;
+  border: 0;
+  margin-top: 20px;
+  padding: 6px 25px;
+  background-color: #6b6;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 3px;
+}
+
+.checkout2:hover {
+  background-color: #494;
+}
+
+/* Make adjustments for tablet */
+@media screen and (max-width: 650px) {
+  .shopping-cart2 {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+
+  .column-labels2 {
+    display: none;
+  }
+
+  .product-image2 {
+    float: right;
+    width: auto;
+  }
+  .product-image2 img {
+    margin: 0 0 10px 10px;
+  }
+
+  .product-details2 {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .product-price2 {
+    clear: both;
+    width: 70px;
+  }
+
+  .product-quantity2 {
+    width: 100px;
+  }
+  .product-quantity2 input {
+    margin-left: 20px;
+  }
+
+  .product-quantity2:before {
+    content: 'x';
+  }
+
+  .product-removal2 {
+    width: auto;
+  }
+
+  .product-line-price2 {
+    float: right;
+    width: 70px;
+  }
+}
+/* Make more adjustments for phone */
+@media screen and (max-width: 350px) {
+  .product-removal2 {
+    float: right;
+  }
+
+  .product-line-price2 {
+    float: right;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .product2 .product-line-price2:before {
+    content: 'Item Total: $';
+  }
+
+  .totals2 .totals-item2 label {
+    width: 60%;
+  }
+  .totals2 .totals-item2 .totals-value2 {
+    width: 40%;
+  }
+}
+
+
+.column-labels2 {
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+	background-color: #fcfcfc;
+}
+
+.product-image2 {
+    padding: 10px;
+}
+
+label.product-removal2 {
+    visibility:hidden;
+}

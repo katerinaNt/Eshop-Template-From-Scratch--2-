@@ -1,0 +1,151 @@
+/*Normal desktop 1366px*/
+
+@media(min-width:1170px) and (max-width:1400px){}
+
+
+
+/*Normal desktop 992px*/
+@media(min-width:992px) and (max-width:1169px){}
+
+
+
+/*Tablet 768px*/
+@media(min-width:768px) and (max-width:991px){
+
+ .mobile-menu-area.hp1-mobile-area {
+    display: none;
+}
+	
+.main-menu > li + li > a {
+    padding-left: 32px;
+}
+
+.links {
+   position: absolute;
+    bottom:29px;
+    right: -477px;
+}
+
+form#velaSearchbox {
+    left: 35px;
+}
+.product-quantity {
+    float: left;
+    width: 23%;
+       margin-left: 10px;
+}
+
+.product-price {
+    float: left;
+    width: 9%;
+   
+}
+
+.dis2 { display:block;	}
+
+.dis {display:block;cursor: pointer;display: block;
+    cursor: pointer;
+    background-color: #fafafa;
+    padding: 15px;
+    color: #1990C6;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+	  
+}
+.order {
+    display: none;
+}
+i.fa.fa-shopping-cart {
+    padding-right: 10;
+    font-size: 20px;
+}
+
+}
+
+
+/*Small mobile:320px*/
+@media (max-width:767px) {
+
+	
+
+button.slick-prev.slick-arrow{left:0;}
+button.slick-next.slick-arrow {right:0;	}
+
+.active-owl-product.owl-theme .owl-controls .owl-buttons div {    top: 82%;left: 18px	}
+.active-owl-product.owl-theme .owl-controls .owl-buttons .owl-next {right: 18px;	}
+
+.mobile-menu-area { display: block;}
+
+.slickCarousel {margin-top: 20px;}
+
+.links {
+    position: absolute;
+    top: -150px;
+    right: -159px;
+}
+
+span#velaSearchIcon {
+    position: absolute;
+    right: 125px;
+    top: 47px;
+}
+form#velaSearchbox {
+    left: 4px;
+}
+
+	.label-sale-big {
+		width: 60px;
+		height: 60px;
+		left: 3px;
+		font-size: 25px;
+		line-height: 65px;
+	
+	}
+
+	.dis2 { display:block;	}
+
+	.dis {display:block;
+		  cursor: pointer;
+		  display: block;
+    cursor: pointer;
+    background-color: #fafafa;
+    padding: 15px;
+    color: #1990C6;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+	.order {
+    display: none;
+}
+
+	.title-mobile-checkout {
+    margin-bottom: 20px;
+}
+
+	
+
+}
+
+
+
+
+@media (max-width:320px) {
+	span#velaSearchIcon {
+		position: absolute;
+		right: 116px;
+		top: 49px;
+	}
+}
+
+@media (min-width:413px) and (max-width:468px){
+
+	span#velaSearchIcon {
+    position: absolute;
+    right: 170px;
+    top: 47px;
+}
+	form#velaSearchbox {
+    left: 9px;
+}
+
+}
